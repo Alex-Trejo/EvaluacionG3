@@ -1,0 +1,71 @@
+/* Header.css */
+
+/* Estilo para las opciones de navegación en pantallas grandes */
+.nav-link {
+    color: #504345; /* Color dorado (#856f6d según tu configuración) */
+    text-decoration: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para el menú desplegable en pantallas pequeñas */
+  .bg-dorado-800 {
+    background-color: #504345; /* Color dorado más oscuro (#504345 según tu configuración) */
+    position: absolute;
+    top: 56px; /* Ajusta la posición según el diseño */
+    right: 0;
+    width: 200px; /* Ajusta el ancho del menú desplegable */
+    z-index: 10; /* Asegura que esté por encima del AppBar */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para efecto visual */
+  }
+  
+  /* Estilo para los enlaces del menú desplegable */
+  .bg-dorado-800 .nav-link {
+    display: block;
+    color: #f4f3f2; /* Color de texto dorado más claro (#f4f3f2 según tu configuración) */
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para el AppBar general */
+  .App-header {
+    background-color: #947e7b !important; /* Color de fondo del AppBar (#e4dedd según tu configuración) */
+    box-shadow: none; /* Quita la sombra predeterminada */
+  }
+  
+  /* Estilo para el Toolbar */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Estilo para el nombre de la tienda en pantallas grandes */
+  .brand {
+    color: #473c3e; /* Color dorado oscuro */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    margin-right: auto; /* Empuja el texto a la izquierda en pantallas grandes */
+  }
+  
+  /* Estilo para ocultar el icono de menú en pantallas grandes */
+  @media (min-width: 1025px) {
+    .menu-button {
+      display: none !important;
+    }
+  }
+  
+  /* Estilo para el contenedor del AppBar en pantallas pequeñas */
+  @media (max-width: 1024px) {
+    .App-header {
+      height: 56px; /* Altura reducida del AppBar en pantallas pequeñas */
+    }
+  
+    .lg\\:flex {
+      display: none; /* Oculta las opciones de navegación en pantallas pequeñas */
+    }
+  }
+  
